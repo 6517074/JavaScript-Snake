@@ -786,10 +786,10 @@ SNAKE.Board = SNAKE.Board || (function() {
             }
             
             // define the dimensions of the board and playing field
-            var wEdgeSpace = me.getBlockWidth()*2 + (cWidth % me.getBlockWidth());
-            var fWidth = Math.min(maxBoardWidth()-wEdgeSpace,cWidth-wEdgeSpace);
-            var hEdgeSpace = me.getBlockHeight()*3 + (cHeight % me.getBlockHeight());
-            var fHeight = Math.min(maxBoardHeight()-hEdgeSpace,cHeight-hEdgeSpace);
+            var wEdgeSpace = 20;
+            var fWidth = 20;
+            var hEdgeSpace =20;
+            var fHeight = 20;
             
             elmContainer.style.left = cLeft + "px";
             elmContainer.style.top = cTop + "px";
